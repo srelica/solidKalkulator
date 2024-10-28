@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1 {
+  font-size: 70px;
+}
+div1 {
+  height: 50px;
+}
+
+select {
+  font-size: x-large;
+}
+input {
+  font-size: x-large;
+}
