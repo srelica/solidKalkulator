@@ -29,7 +29,7 @@ export default function (props) {
                 <option value={"djeljenje"}>Djeljenje</option>
             </select> <br /> <br />
             <div> <span>&#8203;</span>
-            <Show when={prviBroj() && drugiBroj()}>
+            <Show when={!isNaN(prviBroj()) && !isNaN(drugiBroj())}>
                 <Show when={operacija() === "zbrajanje"}>
                     {prviBroj()} + <Show when={drugiBroj() < 0}>(</Show>{drugiBroj()}<Show when={drugiBroj() < 0}>)</Show> = {(prviBroj() + drugiBroj()).toFixed(3)}
                 </Show>
